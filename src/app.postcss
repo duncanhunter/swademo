@@ -1,0 +1,42 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply mt-10 mb-5 text-3xl;
+	}
+
+	h2 {
+		@apply mt-10 mb-5 text-xl;
+	}
+
+	a {
+		@apply text-blue-400 no-underline hover:underline;
+	}
+
+	ul,
+	ol {
+		@apply pl-5 py-2;
+	}
+
+	ul li {
+		@apply list-disc;
+	}
+
+	ol li {
+		@apply list-decimal;
+	}
+
+	blockquote {
+		@apply my-4 p-5 border-solid bg-gray-800 rounded-sm border-2 border-blue-400;
+	}
+
+	
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+	@apply bg-tertiary rounded-sm my-5 !important;
+}
